@@ -353,7 +353,7 @@ export default function Home() {
             <TabsList
               variant="line"
               aria-label="Primary navigation"
-              className="h-12 gap-1 overflow-x-auto rounded-none p-0 max-md:absolute max-md:left-0 max-md:right-0 max-md:top-[75px] max-md:h-[58px] max-md:justify-start max-md:border-b max-md:border-[#e2e5ee] max-md:bg-white max-md:px-5"
+              className="h-12 gap-1 overflow-x-auto scrollbar-none rounded-none p-0 max-md:absolute max-md:left-0 max-md:right-0 max-md:top-[75px] max-md:h-[58px] max-md:justify-start max-md:border-b max-md:border-[#e2e5ee] max-md:bg-white max-md:px-5"
             >
               <TabsTrigger value="dashboard" className="h-full rounded-none px-4 text-[0.9rem] font-semibold data-[state=active]:text-[#4f5bd5] after:bg-[#4f5bd5]">
                 <LayoutDashboard /> Dashboard
@@ -381,9 +381,21 @@ export default function Home() {
             <section aria-labelledby="dashboard-heading">
               <div className="mb-8 flex flex-wrap items-end justify-between gap-5">
                 <div>
-                  <p className="mb-2 text-sm font-bold uppercase tracking-[0.12em] text-[#737a93]">Friday, September 11</p>
-                  <h1 id="dashboard-heading" className="text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.05] tracking-[-0.045em] text-[#20263d]">Good afternoon, Bryce.</h1>
-                  <p className="mt-3 text-[1.05rem] text-[#71778a]">You have {incomplete.length} open assignments. Two need your attention today.</p>
+<p className="mb-2 text-sm font-bold uppercase tracking-[0.12em] text-[#737a93]">
+  Good afternoon, Bryce · Friday, September 11
+</p>
+
+<h1
+  id="dashboard-heading"
+  className="text-[clamp(2rem,4vw,3.5rem)] font-bold leading-[1.05] tracking-[-0.045em] text-[#20263d]"
+>
+  Your coursework, in priority order.
+</h1>
+
+<p className="mt-3 text-[1.05rem] text-[#71778a]">
+  Canvas and Learning Suite assignments, organized in one place. You have{" "}
+  {incomplete.length} open assignments; two need attention today.
+</p>
                 </div>
                 <div className="flex items-center gap-3 rounded-2xl border border-[#e3e5ed] bg-white px-4 py-3 shadow-[0_8px_24px_rgba(31,36,56,0.04)]">
                   <div className="grid size-10 place-items-center rounded-xl bg-[#eaf8f3] text-[#168a72]"><Check className="size-5" strokeWidth={2.5} /></div>
