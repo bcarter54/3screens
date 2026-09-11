@@ -353,7 +353,7 @@ export default function Home() {
             <TabsList
               variant="line"
               aria-label="Primary navigation"
-              className="h-12 gap-1 overflow-x-auto rounded-none p-0 max-md:absolute max-md:left-0 max-md:right-0 max-md:top-[75px] max-md:h-[58px] max-md:justify-start max-md:border-b max-md:border-[#e2e5ee] max-md:bg-white max-md:px-5"
+              className="h-12 gap-1 overflow-x-auto scrollbar-none rounded-none p-0 max-md:absolute max-md:left-0 max-md:right-0 max-md:top-[75px] max-md:h-[58px] max-md:justify-start max-md:border-b max-md:border-[#e2e5ee] max-md:bg-white max-md:px-5"
             >
               <TabsTrigger value="dashboard" className="h-full rounded-none px-4 text-[0.9rem] font-semibold data-[state=active]:text-[#4f5bd5] after:bg-[#4f5bd5]">
                 <LayoutDashboard /> Dashboard
